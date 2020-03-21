@@ -2,6 +2,15 @@ body {
   font-family: monospace;
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
 /* Navbar */
 .navbar {
   background-color: #EEE;
@@ -47,10 +56,14 @@ body {
 }
 
 /* Registration form */
+.back-to-home {
+  margin-bottom: 1.5rem;
+}
+
 .form-wrapper {
   width: 50%;
   padding: 4rem;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .form-group {
