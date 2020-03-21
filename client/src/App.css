@@ -1,0 +1,92 @@
+body {
+  font-family: monospace;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #EEE;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Landing page */
+.card {
+  width: 40%;
+  padding: 1rem;
+  margin: 10rem auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card-title {
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.landing-btn-group {
+  text-align: center;
+}
+
+.landing-btn {
+  margin: 1rem 1rem 0 0;
+  width: 8rem;
+}
+
+/* Registration form */
+.form-wrapper {
+  width: 50%;
+  padding: 4rem;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.form-redirect-text {
+  margin: 1rem 0 2.5rem 0;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #007bff;
+}
+
+
+.form-control:focus ~ .floating-label,
+.form-control:not(:focus):not(:placeholder-shown) ~ .floating-label {
+  opacity: 1;
+  margin-top: -2rem;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 8px;
+  left: 12px;
+  font-size: 1rem;
+  transition: 0.2s ease all;
+  opacity: 0.8;
+}
