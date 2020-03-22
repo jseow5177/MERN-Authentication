@@ -64,11 +64,11 @@ router.post("/login", (req, res) => {
       return res.status(400).json({emailNotFound: "Email not found"});
     }
 
-    // Check password
+    // Check password and validate login
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) { // Password matches, create JWT payload
         const payLoad = {
-          id: user.id,
+          id: user._id,
           name: user.name
         };
         // Create and sign token

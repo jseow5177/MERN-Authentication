@@ -56,6 +56,14 @@ a:hover {
 }
 
 /* Registration form */
+.red-text {
+  color: #FF0000;
+}
+
+.invalid {
+  border: 1px solid rgba(255, 0, 0, 0.5) !important;
+}
+
 .back-to-home {
   margin-bottom: 1.5rem;
 }
